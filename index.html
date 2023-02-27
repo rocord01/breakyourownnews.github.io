@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Break Your Own News - Breaking News Generator</title>
+	<link rel="canonical" href="https://rocord01.github.io/watermarkless-breakyourownnews" />
+    <meta property="og:title" content="Break Your Own News Watermark Removed Edition">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rocord01.github.io/watermarkless-breakyourownnews">
+    <meta property="og:image" content="breakingnews/fb.jpg">
+    <meta property="og:site_name" content="Break Your Own News Watermark Removed Edition">
+    <meta property="og:description"
+          content="(watermark removed by rocord01) Today's top story... you! Or, whatever you want. Add your pic, write the headline and we'll go live to the scene. Sort of.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Signika:400,700" rel='stylesheet' type='text/css'>
+    <script src="ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link type="text/css" href="style.css" rel="stylesheet" media="screen"/>
+    <link rel="shortcut icon" type="image/png" href="logo.png"/>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div class="container">
+    <div class="grid">
+        <section class="intro">
+            <div class="group">
+                <h1 class="logo">Break Your Own News</h1>
+                <p class="intro__text"><strong>(watermarkless editon) </strong>The Breaking News Generator - Today's top story... you! Or, whatever you want.
+                    Add your pic, write the headline and we'll go live to the scene. Sort of.</p>
+            </div>
+            <div class="build-form">
+                <div class="build-form__item">
+                    <label class="build-form__label" for="textBox">Headline</label>
+                    <input id="textBox" type="text" placeholder="Write your story here..."/>
+                </div><!--
+             --><div class="build-form__item">
+                    <label class="build-form__label" for="tickerBox">Ticker</label>
+                    <input id="tickerBox" type="text" placeholder="Fill out the ticker with the latest updates..."/>
+                </div>
+                <fieldset>
+                    <legend class="build-form__label">Image Size</legend>
+                    <div class="build-form__radio">
+                        <input type="radio" id="wide" name="imageRatio" value="wide" checked>
+                        <label for="wide">Wide Rectangle</label>
+                    </div>
+                    <div class="build-form__radio">
+                        <input type="radio" id="square" name="imageRatio" value="square" >
+                        <label for="square">Square</label>
+                    </div>
+                    <div class="build-form__radio">
+                        <input type="radio" id="portrait" name="imageRatio" value="portrait" >
+                        <label for="portrait">Portrait</label>
+                    </div>
+                </fieldset>
+                <label class="build-form__label" for="imageLoader">Your Image</label>
+                <input type="file" id="imageLoader" name="imageLoader"/>
+                <p class="disclaimer">This app is intended for fun, humour and parody - be careful what you make and how it may be shared. You should avoid making things which are unlawful, defamatory or likely to cause distress. Have fun and be kind! </p>
+            </div>
+        </section><!--
+        --><section class="main">
+            <canvas id="canvasOne" width="1280" height="720" class="byon-canvas">
+                Your browser does not support HTML5 Canvas.
+            </canvas>
+            <div class="share-row">
+            <a href="#" class="button button--yellow" id="btn-download" download="breaking-news.jpg">Download your image</a>
+                <!--<button class="button" id="btn-imgur">Upload to imgur</button>-->
+                <div class="upload-response"></div>
+            </div>
+        </section>
+    </div>
+    <p class="disclaimer"><a>watermark removed by </a><a href="https://rocord.dev">rocord01</a></p>
+    <footer>
+              <img src="favicon.ico" alt="Pixel head of Jonathan" style="margin-right:6px;"> By <a
+            href="https://twitter.com/jonathanex/">@JonathanEx</a>. Find <a href="http://www.jonathancresswell.co.uk/">more
+        dumb stuff</a> like this!
+    </footer>
+</div>
+</body>
+</html>
